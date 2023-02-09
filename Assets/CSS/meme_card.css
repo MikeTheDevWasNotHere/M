@@ -81,12 +81,6 @@ margin-right: 20px;
 .card .sub-title {
   color: gray;
 }
-.card .rating {
-  margin-top: 0.5rem;
-}
-.card .rating .fas {
-  color: gold;
-}
 .card .price-box {
   display: flex;
   margin-top: 0.6rem;
@@ -97,7 +91,6 @@ margin-right: 20px;
   font-weight: bold;
 }
 .card .price-box p::before {
-  content: "$";
   margin-right: 2px;
   color: gray;
 }
