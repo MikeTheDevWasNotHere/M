@@ -1,0 +1,38 @@
+.card {
+	margin-left: 20px;
+	margin-right: 20px;
+	background: #fff;
+	border-radius: 7px;
+}
+
+.card .image-box img {
+	width: 30%;
+	background-repeat:no-repeat;
+	background-size:cover;
+	height: 15%;
+	border-radius: 8px 8px 0 0;
+}
+
+.card .profile-details {
+	display: flex;
+	align-items: center;
+	column-gap: 12px;
+	padding: 15px;
+}
+
+.card .profile-details img {
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+}
+
+.profile-details .name {
+	font-size: 15px;
+	font-weight: 500;
+}
+
+.profile-details .job {
+	font-size: 12px;
+	font-weight: 500;
+	color: #4d4d4d;
+}
