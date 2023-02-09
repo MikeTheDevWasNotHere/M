@@ -139,7 +139,22 @@
                         const elem = document.createElement("p");
 						
                         elem.innerHTML = `
-							<div class="card">
+			<div class="card">
+  <div class="image-box">
+    <img src="https://s3.amazonaws.com/coursesity-blog/2020/07/data-structure-algorithm-courses.png" alt="">
+  </div>
+  <div class="card-content">
+    <span class="tag">Intermediate</span>
+    <h2 class="card-title">Data structureand algorithm</h2>
+    <small class="sub-title">Lorem, ipsum dolor.</small>
+    <div class="price-box">
+      <p class="price">423</p>
+      <p class="old-price">533</p>
+    </div>
+    <button class="btn">Learn now</button>
+  </div>
+</div>
+							<!--<div class="card">
 								<div class="image-box">
 									<img src="${obj.Meme}" alt="Meme Unavaliable" />
 								</div>
@@ -152,7 +167,7 @@
 										<h4 class="job">${obj.Search.ID}</h4>
 									</div>
             					</div>
-            				</div>
+            				</div>-->
             			<br>`
                         x.appendChild(elem);
                     }
