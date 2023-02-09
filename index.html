@@ -95,7 +95,8 @@
 					
 					"Search": {
 						"ID": "20702231205",
-						"D1": "2/7/23"
+						"D1": "2/7/23",
+						"TG": ""
 					}
                 },
                 {
@@ -105,7 +106,8 @@
 					
 					"Search": {
 						"ID": "20702231259",
-						"D1": "2/7/23"
+						"D1": "2/7/23",
+						"TG": "#"
 					}
                 },
 				{
@@ -115,7 +117,8 @@
 
 					"Search": {
 						"ID": "30807230903",
-						"D1": "2/8/23"
+						"D1": "2/8/23",
+						"TG": ""
 					}
 				}
             ]`
@@ -133,7 +136,8 @@
 
                     if (obj.Title.toLowerCase().includes(input) ||
 						obj.Search.ID.toLowerCase().includes(input) ||
-					   	obj.Search.D1.toLowerCase().includes(input)) {
+					   	obj.Search.D1.toLowerCase().includes(input) ||
+		       				obj.Search.TG.toLowerCase().includes(input)) {
                         const elem = document.createElement("p");
 						
                         elem.innerHTML = `
