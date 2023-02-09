@@ -84,18 +84,6 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
     -o-transition: all 0.2s linear;
     transition: all 0.2s linear;
 }
-.ti-facebook:before {
-    content: "\e741";
-}
-.ti-twitter-alt:before {
-    content: "\e74b";
-}
-.ti-vimeo-alt:before {
-    content: "\e74a";
-}
-.ti-pinterest:before {
-    content: "\e731";
-}
 
 .btn_get_two {
     -webkit-box-shadow: none;
