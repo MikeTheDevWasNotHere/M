@@ -217,9 +217,8 @@
                     let obj = data[i];
 
                     if (obj.Title.toLowerCase().includes(input) ||
-						obj.Search.ID.toLowerCase().includes(input) ||
-					   	obj.Search.D1.toLowerCase().includes(input) ||
-		       				obj.Search.TG.toLowerCase().includes(input)) {
+			obj.Search.ID.toLowerCase().includes(input) ||
+			obj.Search.D1.toLowerCase().includes(input)) {
                         const elem = document.createElement("p");
 						
                         elem.innerHTML = `
