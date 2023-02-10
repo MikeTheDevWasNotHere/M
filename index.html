@@ -74,6 +74,7 @@
         </section>
 		
 	<script src="Assets/JS/sidebar.js"></script>
+	    <script src="Assets/JS/dropdown.js"></script>
 
         <script>
             /*
@@ -157,11 +158,14 @@
       <p class="old-price">###</p>
     </div>-->
     <button class="btn">Options</button>
-    <div class="dropdown-content">
-      <a href="#">Link 1</a>
-      <a href="#">Link 2</a>
-      <a href="#">Link 3</a>
-    </div>
+    <div class="dropdown">
+  <button onclick="dropdown()" class="btn">Options</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+</div>
   </div>
 </div>
 							<!--<div class="card">
