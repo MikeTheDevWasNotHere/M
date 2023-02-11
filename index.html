@@ -3,10 +3,10 @@
     <head>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/iconfont/tabler-icons.min.css">
 	    
-	<link rel="stylesheet" type="text/css" href="Assets/CSS/meme_card.css">
-	<link rel="stylesheet" type="text/css" href="Assets/CSS/sidebar.css">
-	    
-	<title>Meme World</title>
+		<link rel="stylesheet" type="text/css" href="Assets/CSS/meme_card.css">
+		<link rel="stylesheet" type="text/css" href="Assets/CSS/sidebar.css">
+
+		<title>Meme World</title>
     </head>
 
     <body onload="search_jsonData()">
@@ -43,7 +43,7 @@
                     </a>
                     <span class="tooltip">Creative Center</span>
                 </li>
-		    <li>
+		    	<li>
                     <a href="#">
                         <i class="ti ti-books"></i>
                         <span class="links_name">Library</span>
@@ -70,10 +70,10 @@
 			
             <ul id="list-holder">
 
-	    </ul>
+	    	</ul>
         </section>
 
-	<script src="Assets/JS/sidebar.js"></script>
+		<script src="Assets/JS/sidebar.js"></script>
 	    
         <script>
             /*
@@ -90,14 +90,12 @@
                 ---|---------|--------------------------------------------------------|-
                 All meme IDs are 11 didgets long.
             */
-            
-            const PFP = "https://flyinryanhawks.org/wp-content/uploads/2016/08/profile-placeholder.png"/*"Assets/Images/PFP.png"*/;
 
             let jsonData = `[
                 {
                     "Title": "Wow",
                     "Meme": "https://i.ytimg.com/vi/sSpDnIJxyXM/maxresdefault.jpg",
-                    "PFP": "${PFP}",
+                    "PFP": "https://flyinryanhawks.org/wp-content/uploads/2016/08/profile-placeholder.png",
 					
 			"Search": {
 				"ID": "20702231205",
@@ -107,7 +105,7 @@
                 {
                     "Title": "Fr",
                     "Meme": "https://cdn.memes.com/up/33436521601415506/i/1675679759926.jpg",
-                    "PFP": "${PFP}",
+                    "PFP": "https://flyinryanhawks.org/wp-content/uploads/2016/08/profile-placeholder.png",
 					
 					"Search": {
 						"ID": "20702231259",
@@ -117,7 +115,7 @@
 				{
 					"Title": "Why tho",
 					"Meme": "https://www.letseatcake.com/wp-content/uploads/2022/06/Marvel-Memes-social.jpg",
-					"PFP": "${PFP}",
+					"PFP": "https://flyinryanhawks.org/wp-content/uploads/2016/08/profile-placeholder.png",
 
 					"Search": {
 						"ID": "30807230903",
@@ -138,46 +136,27 @@
                 for (i = 0; i < data.length; i++) {
                     let obj = data[i];
 
-                    if (obj.Title.toLowerCase().includes(input) ||
-			obj.Search.ID.toLowerCase().includes(input) ||
-			obj.Search.D1.toLowerCase().includes(input)) {
+                    if (obj.Title.toLowerCase().includes(input) || obj.Search.ID.toLowerCase().includes(input) || obj.Search.D1.toLowerCase().includes(input)) {
                         const elem = document.createElement("p");
 						
                         elem.innerHTML = `
-			<div class="card">
-  				<div class="image-box">
-    					<img src="${obj.Meme}" alt="">
-  				</div>
+							<div class="card">
+  								<div class="image-box">
+    								<img src="${obj.Meme}" alt="">
+  								</div>
 				
-  				<div class="card-content">
-				    <span class="tag">#Tag</span>
-				    <h2 class="card-title">${obj.Title}</h2>
-				    <small class="sub-title">Lorem, ipsum dolor.</small>
-  				    <button class="btn">Options</button>
-  				</div>
-			</div>
-			
-
-
-							<!--<div class="card">
-								<div class="image-box">
-									<img src="${obj.Meme}" alt="Meme Unavaliable" />
+								<div class="card-content">
+									<span class="tag">#Tag</span>
+									<h2 class="card-title">${obj.Title}</h2>
+									<small class="sub-title">Lorem, ipsum dolor.</small>
+									<button class="btn">Options</button>
 								</div>
-
-								<div class="profile-details">
-									<img src="${obj.PFP}" alt="" />
-
-									<div class="name-job">
-										<h3 class="name">${obj.Title}</h3>
-										<h4 class="job">${obj.Search.ID}</h4>
-									</div>
-            					</div>
-            				</div>-->
+							</div>
             			<br>`
                         x.appendChild(elem);
                     }
                 }
             }
-	</script>
+		</script>
     </body>
 </html>
