@@ -165,8 +165,7 @@
 }
 
 .sidebar li a:hover{
-	background: #1d1b31;
-	color: #FFF;
+	background: #FFF;
 }
 
 .sidebar li a .links_name{
