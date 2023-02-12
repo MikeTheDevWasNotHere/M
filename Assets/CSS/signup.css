@@ -49,7 +49,7 @@ html {
 	background-color: #445ae3;
 }
 
-.dating-app {
+.as-app {
 	width: 27.5rem;
 	overflow: hidden;
 	border-radius: 2rem;
@@ -70,23 +70,23 @@ html {
 }
 
 @media only screen and (max-width: 23.75em) {
-	.dating-app {
+	.as-app {
 		width: auto;
 		margin: 2.5rem 1rem;
 	}
 }
 
-.dating__logo {
+.as__logo {
 	margin-top: 4rem;
 	width: 100%;
 	text-align: center;
 }
 
-.dating__logo img {
+.as__logo img {
 	margin: 0 auto 1.5rem;
 }
 
-.dating__form {
+.as__form {
 	margin-top: 8.5rem;
 	display: flex;
 	flex-flow: column wrap;
@@ -94,12 +94,12 @@ html {
 	width: 100%;
 }
 
-.dating__form>* {
+.as__form>* {
 	width: 100%;
 	font-family: "Montserrat", sans-serif;
 }
 
-.dating__inp {
+.as__inp {
 	border: 0;
 	border-bottom: 1px solid #e9e7fc;
 	padding: 1.5rem 0;
@@ -111,22 +111,22 @@ html {
 	font-weight: 600;
 }
 
-.dating__inp::placeholder {
+.as__inp::placeholder {
 	color: #0d0e1c;
 }
 
-.dating__forgot-pwd {
+.as__forgot-pwd {
 	display: block;
 	margin-top: 1.5rem;
 	color: #88879a;
 	transition: color 0.2s ease-in;
 }
 
-.dating__forgot-pwd:hover {
+.as__forgot-pwd:hover {
 	color: #f469fd;
 }
 
-.dating__footer {
+.as__footer {
 	width: 100%;
 	margin-top: 6rem;
 	display: flex;
