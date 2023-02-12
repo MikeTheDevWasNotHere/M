@@ -1,4 +1,4 @@
-const { QuickDB } = require('quick.db');
+import { QuickDB } from 'quick.db';
 const db = new QuickDB({ filePath: 'source/to/path/test.sqlite' });
 
 let saveSignup = () => {
