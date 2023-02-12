@@ -1,7 +1,7 @@
 import { QuickDB } from 'quick.db';
 const db = new QuickDB({ filePath: 'source/to/path/test.sqlite' });
 
-let saveSignup = () => {
+function saveSignup() {
     const name = document.getElementById('txtName');
     //const age = document.getElementById('txtAge');
 
